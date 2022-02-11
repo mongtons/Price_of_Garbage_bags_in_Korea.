@@ -3,8 +3,6 @@ library(ggplot2)
 library(data.table)
 library(RColorBrewer)
 
-getwd()
-setwd("c:/Users/samsung/OneDrive/바탕 화면/Data_Practice")
 trash_plasticbag=fread("전국종량제봉투가격표준데이터.csv", header=T)%>%as_tibble()
 view(trash_plasticbag)
 select_tpb=trash_plasticbag%>%
